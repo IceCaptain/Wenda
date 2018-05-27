@@ -8,5 +8,6 @@ public class WendaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WendaApplication.class, args);
+		System.out.println(123);
 	}
 }
