@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Hello</title>
+<script th:inline="javascript">
+/*<![CDATA[*/ 
+	
+window.onload=function(){
+	var hello=[[${hello}]];
+	alert(hello);
+}
+	
+/*]]>*/  
+</script>
+</head>
+<body>
+	hello!!
+	<p th:text="${hello}"></p>
+	<div th:each="i:${list}">
+		<p th:text="${i}"></p>
+	</div>
+	<div th:each="entry:${map}">
+		<p th:text="${entry.key}+':'+${entry.value}"></p>
+	</div>
+	<p th:text="${map.key}"></p>
+	
+	<div th:include="/head::#h"></div>
+	<div th:include="${mainPage}::${mainPageKey}"></div>
+</body>
+</html>
