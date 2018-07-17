@@ -6537,7 +6537,7 @@ header.navbar .navbar-toggle .icon-bar {
   }
 }
 
-/*赞成and反对*/
+/*璧炴垚and鍙嶅*/
 .votebar {
     float: left;
     margin-right: 18px;
@@ -6691,7 +6691,7 @@ header.navbar .navbar-toggle .icon-bar {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /*for ie8不变省略号问题*/
+    /*for ie8涓嶅彉鐪佺暐鍙烽棶棰�*/
     word-wrap:normal;
 }
 .msg-num {
@@ -6793,7 +6793,8 @@ header.navbar .navbar-toggle .icon-bar {
 }
 
 .letter-chat .chat-content {
-    width: 300px;
+    width: 30%;
+    height: 70px;	
     line-height: 1.6;
     font-size: 14px;
 }
@@ -6891,7 +6892,7 @@ header.navbar .navbar-toggle .icon-bar {
     overflow: auto;
     overflow-x: hidden;
 }
-/*弹窗框架样式*/
+/*寮圭獥妗嗘灦鏍峰紡*/
 .pop-box {
     /*border-radius: 10px;*/
     border-radius: 4px;
@@ -6950,7 +6951,7 @@ header.navbar .navbar-toggle .icon-bar {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/*弹窗内容大间距*/
+/*寮圭獥鍐呭澶ч棿璺�*/
 .pop-padding-lg {
     padding: 20px 50px;
 }
@@ -6988,7 +6989,7 @@ header.navbar .navbar-toggle .icon-bar {
     position: absolute;
     z-index: 1000;
 }
-/*弹窗框架样式结束*/
+/*寮圭獥妗嗘灦鏍峰紡缁撴潫*/
 .input-section .control-label {
     padding: 0 15px;
     font-size: 14px;
@@ -7034,23 +7035,23 @@ header.navbar .navbar-toggle .icon-bar {
     line-height: 20px;
     display: none;
 }
-/* 错误提示icon */
+/* 閿欒鎻愮ずicon */
 .input-icon.icon-remove-sign {
     color: #ff5400;
 }
-/* 成功提示icon */
+/* 鎴愬姛鎻愮ずicon */
 .input-icon.icon-ok-sign {
   color: #25bb9b;
   display: none;
 }
-/* 提示icon及提示文案显示 */
+/* 鎻愮ずicon鍙婃彁绀烘枃妗堟樉绀� */
 .error .icon-remove-sign,
 .success .icon-ok-sign,
 .error .input-tip,
 .focus .input-tip {
   display: block;
 }
-/* 提示文案默认隐藏 */
+/* 鎻愮ず鏂囨榛樿闅愯棌 */
 .input-tip {
   position: absolute;
   left: 0;
@@ -7059,11 +7060,11 @@ header.navbar .navbar-toggle .icon-bar {
     font-size: 14px;
     line-height: 14px;
 }
-/* 错误提示文案 */
+/* 閿欒鎻愮ず鏂囨 */
 .error .input-tip {
     color: #ff5400;
 }
-/*输入框*/
+/*杈撳叆妗�*/
 textarea,
 .input-section input[type="text"],
 .input-section input[type="password"],
@@ -8104,7 +8105,7 @@ html.no-touchevents .zg-link-gray:hover,html.no-touchevents .zg-link-gray-normal
     list-style:none
 }
 .zh-footer li+li:before {
-    content:'•';
+    content:'鈥�';
     margin-right:3px;
     padding:0 3px;
     font-family:Arial;
