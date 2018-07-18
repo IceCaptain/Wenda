@@ -105,6 +105,7 @@ public class MessageController {
 			message.setFromId(hostHolder.getUser().getId());
 			message.setToId(user.getId());
 			message.setContent(content);
+			message.setHasRead(0);
 			messageService.addMessage(message);
 			
 			return WendaUtil.getJSONString(0);

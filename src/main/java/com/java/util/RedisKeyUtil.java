@@ -8,11 +8,17 @@ public class RedisKeyUtil {
 	
 	private static final String BIZ_DISLIKE="DISLIKE";
 	
+	private static final String BIZ_EVENTQUEUE = "EVENTQUEUE";
+	
 	public static String getLikeKey(Integer entityType, Integer entityId){
 		return BIZ_LIKE+SPLIT+String.valueOf(entityType)+SPLIT+String.valueOf(entityId);
 	}
 	
 	public static String getDisLikeKey(Integer entityType, Integer entityId){
 		return BIZ_DISLIKE+SPLIT+String.valueOf(entityType)+SPLIT+String.valueOf(entityId);
+	}
+	
+	public static String getEventQueueKey(){
+		return BIZ_EVENTQUEUE;
 	}
 }

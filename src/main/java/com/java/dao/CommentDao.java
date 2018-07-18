@@ -22,6 +22,9 @@ public interface CommentDao {
 	@Insert({"insert into ",TABLE_NAME,"(",INSERT_FIELDS,") values(#{userId},#{content},#{createdDate},#{entityId},#{entityType},#{status})"})
 	public int addComment(Comment comment);
 	
+	@Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where id=#{id}"})
+	public Comment getCommentById(Integer id);
+	
 	@Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where entity_id=#{entityId} and entity_type=#{entityType} order by created_date desc"})
 	public List<Comment> selectCommentsByEntity(@Param("entityId")Integer entityId, @Param("entityType")Integer entityType);
 	
